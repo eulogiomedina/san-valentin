@@ -1,0 +1,94 @@
+/* Reseteo de márgenes y rellenos para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #40e0d0; /* Color suave tipo rosa pastel */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    background-image: url('f2.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para que se vea bien con la imagen */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 500px;  /* Ancho para pantallas grandes */
+    max-width: 80%; /* Hace que el contenedor se ajuste en pantallas más pequeñas */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    color: #ff3366;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ffe6f2;
+    border-radius: 10px;
+}
+
+/* Media Queries - Responsividad */
+@media (max-width: 768px) {
+    body {
+        height: auto; /* Permitir que el cuerpo crezca en pantallas más pequeñas */
+        padding: 20px;
+    }
+
+    .text-container {
+        width: 100%; /* El contenedor de texto ocupará todo el ancho disponible */
+        padding: 20px; /* Reducimos el padding en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 24px; /* Reducimos el tamaño del título */
+    }
+
+    p {
+        font-size: 16px; /* Reducimos el tamaño del texto */
+    }
+
+    blockquote {
+        font-size: 18px; /* Reducimos el tamaño del bloque de citas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Reducimos aún más el tamaño del título para dispositivos muy pequeños */
+    }
+
+    p {
+        font-size: 14px; /* Reducimos el tamaño del texto */
+    }
+
+    blockquote {
+        font-size: 16px; /* Reducimos el tamaño de las citas */
+    }
+}
